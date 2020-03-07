@@ -1,0 +1,24 @@
+{
+  "name": "qut-white-hats",
+  "version": "1.0.0",
+  "description": "A place for my CTF related code to live",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./node_modules/nodemon/bin/nodemon.js src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverjcollins/qut-white-hats.git"
+  },
+  "keywords": [],
+  "author": "Oliver Collins",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/oliverjcollins/qut-white-hats/issues"
+  },
+  "homepage": "https://github.com/oliverjcollins/qut-white-hats#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
