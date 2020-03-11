@@ -53,8 +53,8 @@ exports.flags = {
    
     challenge5: {
         call: {
-            name: 'Challenge 6',
-            description: 'You get the idea, decrypt',
+            name: 'Challenge 5',
+            description: 'You get the idea, decrypt this transposition',
             ciphertext: 'w tesitel ksrInh lj timum kiateatla k tal ',
         },
         response:{
@@ -66,7 +66,7 @@ exports.flags = {
     },
     challenge6: {
         call: {
-            name: 'Challenge 5',
+            name: 'Challenge 6',
             description: 'letters might be too easy for you, lets remove them',
             ciphertext: '.... . .-.. .--.     -- .     .--. .-.. . .- ... .     --.. .- -.-.     .... .- ...     - .-. .- .--. .--. . -..     -- .     .. -.     .... .. ...     ..- -. -.. . .-. --. .-. --- ..- -. -..     -... .- ... . -- . -. -',
         },
@@ -79,13 +79,25 @@ exports.flags = {
     challenge7: {
         call: {
             name: 'Challenge 7',
-            description: '',
+            description: 'If we have a public RSA key of (e=3,n=55), encrypt the message n=6',
             ciphertext: '',
         },
         response:{
             message: 'Congratulations!',
-            plaintext: '',
-            flag: 'flag{MOAR_morse_code}',
+            plaintext: '51',
+            flag: 'flag{mod_maths_is_fun}',
+        }
+    },
+    challenge8: {
+        call: {
+            name: 'Challenge 8',
+            description: 'Ive done something very special to my password',
+            ciphertext: 'cec6914c7d961496bb373513195bd255',
+        },
+        response:{
+            message: 'Congratulations!',
+            plaintext: 'MyVerySecurePassword1337',
+            flag: 'flag{#hash_tag}',
         }
     },
 }
