@@ -98,6 +98,7 @@ exports.flags = {
             message: 'Congratulations!',
             plaintext: 'MyVerySecurePassword1337',
             flag: 'flag{#hash_tag}',
+            note: 'reverse md5 hash'
         }
     },
     challenge9: {
