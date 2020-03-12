@@ -10,6 +10,8 @@ module.exports = (app) => {
   app.get('/ch6', cipher.getChallenge)
   app.get('/ch7', cipher.getChallenge)
   app.get('/ch8', cipher.getChallenge)
+  app.get('/ch9', cipher.getChallenge)
+  app.get('/ch10', cipher.getChallenge)
   // check answers
   app.post('/ch1', cipher.checkAnswer)
   app.post('/ch2', cipher.checkAnswer)
@@ -19,4 +21,6 @@ module.exports = (app) => {
   app.post('/ch6', cipher.checkAnswer)
   app.post('/ch7', cipher.checkAnswer)
   app.post('/ch8', cipher.checkAnswer)
+  app.post('/ch9', cipher.checkAnswer)
+  app.post('/ch10', cipher.checkAnswer)
 }

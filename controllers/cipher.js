@@ -26,9 +26,14 @@ exports.getChallenge = function (req, res) {
         case '/ch8':
             res.status(200).send(ctfData.flags.challenge8.call)
             break
+        case '/ch9':
+            res.status(200).send(ctfData.flags.challenge9.call)
+            break
     }
 }
-
+//NOTE TO OLI
+//Your old code wasn't working and was only returning challenge1's answer everytime. 
+//I found the best thing do to was to hard code everything lol it works though
 exports.checkAnswer = function (req, res) {
     let challenge
     switch(req.route.path) {
@@ -56,10 +61,13 @@ exports.checkAnswer = function (req, res) {
         case '/ch8':
             challenge = ctfData.flags.challenge8
             break
+        case '/ch9':
+            challenge = ctfData.flags.challenge9
+            break
     }
 
     if (req.body.answer == challenge.response.plaintext){
-        res.status(200).send(ctfData.flags.challenge1.response)
+        res.status(200).send(challenge.response)
     } else {
         res.status(200).send(ctfData.flags.wrong)
     }

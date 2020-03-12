@@ -91,13 +91,38 @@ exports.flags = {
     challenge8: {
         call: {
             name: 'Challenge 8',
-            description: 'Ive done something very special to my password',
+            description: 'Ive done something very special to my password, youll never get it',
             ciphertext: 'cec6914c7d961496bb373513195bd255',
         },
         response:{
             message: 'Congratulations!',
             plaintext: 'MyVerySecurePassword1337',
             flag: 'flag{#hash_tag}',
+        }
+    },
+    challenge9: {
+        call: {
+            name: 'Challenge 9',
+            description: '@#',
+            ciphertext: 'R olev nv hlnv ilfmw qfrxb hlug dzin kvzxsvh',
+        },
+        response:{
+            message: 'Congratulations!',
+            plaintext: 'I love me some round juicy soft warm peaches',
+            flag: 'flag{its_better_with_two}',
+            note: 'atbash cipher'
+        }
+    },
+    challenge10: {
+        call: {
+            name: 'Challenge 10',
+            description: '@#',
+            ciphertext: 'R olev nv hlnv ilfmw qfrxb hlug dzin kvzxsvh',
+        },
+        response:{
+            message: 'Congratulations!',
+            plaintext: 'I love me some round juicy soft warm peaches',
+            flag: 'flag{its_better_with_two}',
         }
     },
 }
