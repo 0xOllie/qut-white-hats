@@ -29,6 +29,12 @@ exports.getChallenge = function (req, res) {
         case '/ch9':
             res.status(200).send(ctfData.flags.challenge9.call)
             break
+        case '/ch11':
+            res.status(200).send(ctfData.flags.challenge11.call)
+            break
+        case '/ch12':
+            res.status(200).send(ctfData.flags.challenge12.call)
+            break
     }
 }
 //NOTE TO OLI
@@ -63,6 +69,12 @@ exports.checkAnswer = function (req, res) {
             break
         case '/ch9':
             challenge = ctfData.flags.challenge9
+            break
+        case '/ch11':
+            challenge = ctfData.flags.challenge11
+            break
+        case '/ch12':
+            challenge = ctfData.flags.challenge12
             break
     }
 
